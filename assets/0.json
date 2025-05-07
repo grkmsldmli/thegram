@@ -1,0 +1,16 @@
+{
+  "name": "GXAU",
+  "symbol": "GXAU",
+  "description": "The Gram Gold Standard (GXAU) — 1 GXAU = 1 gram of gold.",
+  "image": "https://raw.githubusercontent.com/grkmsldmli/thegram/main/final%20logo%20Solana%20GXAU.png",
+  "seller_fee_basis_points": 0,
+  "properties": {
+    "files": [
+      {
+        "uri": "https://raw.githubusercontent.com/grkmsldmli/thegram/main/final%20logo%20Solana%20GXAU.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}
