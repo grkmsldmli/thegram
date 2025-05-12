@@ -2,8 +2,8 @@ name: Fetch Gold Price
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Her saat başı otomatik çalışır
-  workflow_dispatch:     # Manuel tetikleme desteği
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -19,6 +19,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Write Anchor wallet keypair
+        run: echo "${{ secrets.ANCHOR_WALLET }}" > id.json
 
       - name: Run fetch-price script
         run: node fetch-price-and-set.js
